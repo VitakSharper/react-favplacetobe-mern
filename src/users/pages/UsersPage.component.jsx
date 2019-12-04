@@ -32,7 +32,6 @@ const Users = () => {
     ];
     return (
         <>
-            <p>Users Page</p>
             <UsersList
                 users={users}
             />
