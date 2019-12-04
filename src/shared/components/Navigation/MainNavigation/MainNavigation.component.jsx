@@ -13,11 +13,16 @@ const MainNavigation = () => {
         <>
             {drawerIsOpen && <Backdrop onClick={() => setDrawerIsOpen(false)}/>}
 
-            {drawerIsOpen && <SideDrawer>
+            <SideDrawer
+                show={drawerIsOpen}
+                onClick={() => setDrawerIsOpen(false)}
+            >
                 <nav className='main-navigation__drawer-nav'>
                     <NavLinks/>
                 </nav>
-            </SideDrawer>}
+            </SideDrawer>
+
+
             <MainHeader>
                 <button
                     className="main-navigation__menu-btn"

@@ -1,7 +1,7 @@
 import React from 'react';
 import './UserPage.styles.css';
 
-import UsersList from "../components/UsersList/UsersList.component";
+import UsersList from "../../components/UsersList/UsersList.component";
 
 const Users = () => {
     const users = [
